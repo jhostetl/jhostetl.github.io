@@ -1,11 +1,11 @@
 
 
 body {
-
+	background:#f8f8f8;
 }
 
 header {
-	background:#f8f8f8; 
+	background:white; 
 	border-bottom:1px solid #ddd;
 }
 
