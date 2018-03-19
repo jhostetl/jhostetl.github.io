@@ -291,7 +291,7 @@
 								<label class="col-sm-4 col-form-label">Expected Salary: $</label> 
 							    <div class="col-sm-6">
 							    	<div class = "input-group">
-							    		<input class = "form-control" type="range" id = "ss" name="salary" min="40" max="200" step="5" value="100"  oninput="updateSalary(this)">					
+							    		<input class = "form-control" type="range" id = "ss" name="salary" min="40" max="200" step="5" value="100"  oninput="updateSalary()">					
 										<span class = "input-group-addon" id="salary">$100k</span>
 									</div>
 							    </div>						
@@ -323,7 +323,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
     <script>
-		function updateSalary(range){
+		function updateSalary(){
 			salary = "$" + document.getElementById("ss").value + "k";
 			$('#salary').text(salary);
 		}
