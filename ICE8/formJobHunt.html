@@ -148,13 +148,14 @@
 									    </div>	
 								    </div>						
 								</div>
-								<div class="form-group row">
-									<label class="col-sm-4 col-form-label">Add Degree:  </label> 
-								    <div class="col-sm-8">
-										<button class = "btn btn-info"  id="addDegree"> Add degree </button>
-								    </div>						
-								</div>
 							</div>	
+							<div id="educationx"></div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Add Degree:  </label> 
+							    <div class="col-sm-8">
+									<button class = "btn btn-info"  id="addDegree"> Add degree </button>
+							    </div>						
+							</div>							
 						</fieldset>
 					</div>	 
 				</div>
@@ -327,6 +328,10 @@
 			salary = "$" + document.getElementById("ss").value + "k";
 			$('#salary').text(salary);
 		}
+		$("#addDegree").on('click', function(){
+			$('#educationx').append($('#education').html())
+			return false;
+		})		
 	</script>
 	</body>
 </html>
