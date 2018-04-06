@@ -10,9 +10,9 @@
       $("#useBilling").click(function(){
         var billing_address = $('#billing').val()
         if ($('#useBilling').is(':checked')) {
-            $("#home").val(billing_address);
+            $("#home").val(billing_address).prop('disabled', true);
         } else {
-            $("#home").val("");
+            $("#home").val("").prop('disabled', false);
         }
       });       
     });
@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>Challenge Two</h1>
-    <form action="challenge3.html">
+    <form action="challenge5.html">
       <fieldset>
         <legend>Billing Information</legend>
         <div>
@@ -36,7 +36,7 @@
         <br>
         <textarea name="homeAdd" id="home"></textarea>
         </div>
-        <input type = "submit" value = "Go To Challenge 3">
+        <input type = "submit" value = "Go To Challenge 5">
       </fieldset>
 </body>
 </html>
