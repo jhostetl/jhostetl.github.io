@@ -3,10 +3,29 @@ body{
 	background-image: url("../images/christmas-black.png");
 }
 
+h1{
+	color:white;
+}
+
 img{
 	border:5px solid blue;
 	padding:5%;
-
+	width:89%
 }
 
+.imageDivs{
+	width:50%;
+}
 
+.image1{
+	float:left;
+}
+
+.image2{
+	float:right;
+}
+
+.floatCenter {
+	margin:auto;
+
+}

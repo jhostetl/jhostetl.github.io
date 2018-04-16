@@ -1,10 +1,13 @@
 $(document).ready(function() {
 	$("#hide").click(function() {
 	  $("#left").hide();
-	  $("#right").css("float:center");
+	  $("#right").removeClass("image2");
+	  $("#right").addClass("floatCenter");
+
 	});
 	$("#show").click(function() {
 	  $("#left").show();
-	  $("#right").css("float:right");
+	  $("#right").addClass("image2");
+	  $("#right").removeClass("floatCenter");
 	});	
 });
